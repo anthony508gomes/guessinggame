@@ -1,0 +1,17 @@
+print('Wassup User. My name is Python. I am a simple program that can do anything you want me to do.')
+print('But I am kind of low on time fam so I will play just one game with you. If you can guess the')
+print('number I am thinking of, you will win a prize')
+
+def main():
+    import random
+    rndomInt = random.randint(0, 10)
+    number = eval(input("Guess a random number between 0 and 10: "))
+    if number == rndomInt:
+        print('You guessed it! I dont have a prize doe but you a dog.')
+    elif number < rndomInt:
+        print('Nope! The number I was thinking of was ', rndomInt)
+    elif number > rndomInt:
+        print('Sorry, The number I had in mind was ', rndomInt)
+
+
+main()
